@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-top: 0px;
+      display:grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px 325px;
+      gap: 9px;
+      background-color:black;
+      
+    }
+    .red{
+      background-color: red;
+    }
+    .red-right{
+      background-color: green;
+    }
+    .red-bottom{
+      display: grid;
+      grid-template-columns: 320px;
+      grid-template-rows:295px 20px;
+      gap: 9px;
+      background-color: black;
+    }
+    .red-bottom-right{
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 295px 20px;
+      gap: 9px;
+      background-color: black;
+    }
+    .rb-1{
+      background-color: blue;
+    }
+    .rb-2{
+      background-color: cadetblue;
+    }
+    .rbr-1{
+      background-color:crimson;
+    }
+    .rbr-2{
+      background-color: black;
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 120px 185px;
+      gap: 20px;
+    }
+    .rbr2-a{
+      background-color: chartreuse;
+    }
+    .rbr2-b{
+      background-color: cyan;
+    }
+    .rbr-3{
+      background-color:black;
+      display: grid;
+      grid-template-columns: 198px 153px;
+      grid-template-rows: 20px;
+      gap: 9px;
+    }
+    .rbr-4{
+      background-color: cyan;
+    }
+    .rbr3-a{
+      background-color: aqua;
+    }
+    .rbr3-b{
+      background-color:maroon;
+    }
+    /* if we change the above colors as per goal we get solution excpt black color ; grid lines cannot be color so we have set 
+    container background to black and then overlay the grid items*/
+
+    </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="red-right"></div>
+    <div class="red-bottom">
+      <div class="rb-1"></div>
+      <div class="rb-2"></div>
+    </div>
+    
+    <div class="red-bottom-right">
+      <div class="rbr-1"></div>
+      <div class="rbr-2">
+        <div class="rbr2-a"></div>
+        <div class="rbr2-b"></div>
+      </div>
+      <div class="rbr-3">
+        <div class="rbr3-a"></div>
+        <div class="rbr3-b"></div>
+      </div>
+      <div class="rbr-4"></div>
+    </div>
+ 
+    
+  </div>
+</body>
+
+</html>
